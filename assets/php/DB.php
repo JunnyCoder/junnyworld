@@ -1,6 +1,6 @@
 <?php
-const DB_HOST = '13.125.56.28';
-const DB_PORT = '54723';
+const DB_HOST = 'localhost';
+const DB_PORT = '3306';
 const DB_NAME = 'junny_world';
 const DB_USER = 'juno';
 const DB_PASSWORD = 'Jb2033324!';
