@@ -19,25 +19,20 @@
               "color"=> $location['color'],
               "url"=> $location['url'],
               "size"=> $location['size']));
-
       }
       $location_JSON = json_encode($location_arr);
       ?>
-<<<<<<< HEAD
-=======
       <script>
           var userData = JSON.parse('<?=$location_JSON?>');
           simplemaps_worldmap_mapdata["locations"] = userData
-
       </script>
->>>>>>> eb80013d2f07a7815282356c4e49453dd54dada8
 	  <script src="assets/js/worldmap.js"></script>
 	  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	  <link rel="stylesheet" href="assets/css/main.css" />
 	  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   </head>
 	<body>
-		<div style="margin: auto; width: 50%;">
+		<div style="margin: auto; width: 50%; height: 500px;">
 			<h1>Travel</h1>
 			<div style="max-width: 1000px"> <!-- Keep map above fold -->
 				<div id="map"></div>
