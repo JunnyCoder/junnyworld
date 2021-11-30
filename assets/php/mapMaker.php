@@ -17,5 +17,5 @@ $r = array(
         "url"=> "default",
         "size"=> "default")
 );
-
+//wear
 echo json_encode($r);
