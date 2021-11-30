@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/login.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    </head>
+    <body class="is-preload">
+        <div id="wrapper">
+
+            <section id="logIn">
+                <p id="big_header">
+                    <a href="index.html" class="logo"><strong>Junny's Journey</strong> </a>
+                </p>
+                <div class="inner" style="padding: 0.2em 0 2em 0">
+                    <section>
+                        <form name="logInSection" action="/assets/php/loginConfirm.php" method="post" class="align-center" >
+                            <div class="fields" style="width: 80%; max-width: 50vh; margin: 0 auto" >
+                                <div class="field">
+                                    <label for="userId">ID</label><input type="text" id="userId" name="userId">
+                                </div>
+                                <br>
+                                <div class="field">
+                                    <label for="userPW">Password</label><input type="password" id="userPW" name="userPW">
+                                </div>
+                                <div class="field">
+                                    <input type="submit" value="LogIn" class="primary" style="width: 100%; margin-top: 2em" />
+                                </div>
+                                <div class="field half">
+                                    <input type="button" value="정보찾기" onclick="" />
+                                </div>
+                                <div class="field half">
+                                    <input type="button" value="회원가입" />
+                                </div>
+
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </section>
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
