@@ -7,9 +7,30 @@
 	  <script src="assets/js/mapdata.js"></script>
       <?php
       include "assets/php/DB.php";
-      $locations = DB::get()->select("SELECT * FROM map_locations ");
-      echo $locations
+      $locations = DB::get()->selectALL("SELECT * FROM map_locations ");
+      $location_arr = array();
+      $i = 0;
+      foreach ($locations as $location){
+          array_push($location_arr, array(
+              "name" => $location['city_name'],
+              "lat" => $location['lat'],
+              "lng" => $location['lng'],
+              "description"=> $location['city_desc'],
+              "color"=> $location['color'],
+              "url"=> $location['url'],
+              "size"=> $location['size']));
+
+      }
+      $location_JSON = json_encode($location_arr);
       ?>
+<<<<<<< HEAD
+=======
+      <script>
+          var userData = JSON.parse('<?=$location_JSON?>');
+          simplemaps_worldmap_mapdata["locations"] = userData
+
+      </script>
+>>>>>>> eb80013d2f07a7815282356c4e49453dd54dada8
 	  <script src="assets/js/worldmap.js"></script>
 	  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	  <link rel="stylesheet" href="assets/css/main.css" />
