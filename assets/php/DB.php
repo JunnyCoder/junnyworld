@@ -1,5 +1,5 @@
 <?php
-const DB_HOST = 'localhost';
+const DB_HOST = '127.0.0.1';
 const DB_PORT = '3306';
 const DB_NAME = 'junny_world';
 const DB_USER = 'juno';
