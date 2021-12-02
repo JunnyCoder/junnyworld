@@ -52,4 +52,32 @@
 
 #big_header nav a:last-child {
     padding-right: 1.5em;
+}@media screen and (max-width: 736px) {
+
+    #big_header .logo {
+        border: 0;
+        display: block;
+        font-size: 1.5em;
+        height: inherit;
+        width: 15em;
+        line-height: inherit;
+        padding: 0;
+        margin: 0 auto 0;
+
+    }
+
+    #big_header .logo strong {
+        -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        background-color: #ffffff;
+        color: #242943;
+        display: inline-block;
+        line-height: 1em;
+        padding: 0 0.125em 0 0.375em;
+    }
+
+
 }
+
