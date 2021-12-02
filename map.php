@@ -34,9 +34,9 @@
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body>
-<div style="margin: auto; width: 50%;">
-    <h1>Travel</h1>
-    <div style="max-width: 1000px"> <!-- Keep map above fold -->
+<div style="margin: auto; width: 100%;">
+
+    <div style="width: 100%"> <!-- Keep map above fold -->
         <div id="map"></div>
     </div>
 
